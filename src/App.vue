@@ -104,6 +104,48 @@
               <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
           </div>
+          <div class="auto-fill multi-cell">
+            <a href="#" class="items">
+              <img src="https://i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+            </a>
+            <a href="#" class="items">
+              <img src="https://i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+            </a>
+            <a href="#" class="items">
+              <img src="https://i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+            </a>
+            <a href="#" class="items">
+              <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/3df8f589521ea019b3b2d6231af17926.png?thumb=1&w=144&h=152" alt="">
+            </a>
+            <a href="#" class="items">
+              <img src="https://i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+            </a>
+          </div>
+          <div class="divider-line"></div>
+          <div class="auto-fill column-cell">
+            <a href="#" class="items">
+              <img src="./assets/images/2018091018403546132.jpg" alt="">
+            </a>
+            <a href="#" class="items">
+              <img src="./assets/images/2018091018421741899.jpg" alt="">
+            </a>
+            <a href="#" class="items">
+              <img src="./assets/images/2018091018432090345.jpg" alt="">
+            </a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="divider-line"></div>
+          <div class="auto-fill">
+            dsfasdfsdfsdf<br/>
+            dsfasdfsdfsdf<br/>
+            dsfasdfsdfsdf<br/>
+            dsfasdfsdfsdf<br/>
+            dsfasdfsdfsdf<br/>
+            dsfasdfsdfsdf<br/>
+            dsfasdfsdfsdf<br/>
+            dsfasdfsdfsdf<br/>
+          </div>
+          
         </div>
       </div>
 
@@ -190,6 +232,7 @@ ul {
 
 .clearfix {
   clear: both;
+  content: '';
 }
 
 .app-shell {
@@ -308,7 +351,7 @@ ul {
           border-color: #f2f2f2;
         }
         span.active {
-          // color: rgb(237, 91, 0);
+          color: rgb(237, 91, 0);
           // border-color: rgb(237, 91, 0);
         }
       }
@@ -330,6 +373,9 @@ ul {
     right: 0;
     background: #fff;
     transition: transform .4s cubic-bezier(.55,0,.1,1);
+    .banner {
+      // padding-bottom: 50%;
+    }
     .gallery {
       background: #ccc;
       margin-left: auto;
@@ -354,6 +400,80 @@ ul {
         position: absolute;
         left: 50%;
         top: 50%; */
+      }
+    }
+    .auto-fill.multi-cell {
+      position: relative;
+      display: flex;
+      .items {
+        flex: 1;
+        max-width: 100%;
+        height: auto!important;
+        width: 100%;
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .divider-line {
+      margin: 0 auto;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      box-sizing: border-box;
+      width: 100%;
+      overflow: hidden;
+      height: 0.46rem;
+      // height: 0.16rem;
+      border-bottom: 0.16rem solid rgb(245, 245, 245);
+      background-color: rgb(245, 245, 245);
+    }
+    .auto-fill {
+      // position: relative;
+    }
+    .auto-fill.column-cell{
+      position: relative;
+      display: block;
+      height:100%;
+      width:100%;
+      // width: 187px;
+      // height: 265px;
+      margin: 0;
+      padding: 0;
+      .items {
+        width: 100%;
+        img{
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      .items:nth-child(1) {
+        float: left;
+        // width: 187px;
+        // height: 265px;
+        width: 50%;
+        height: 100%;
+        margin-bottom: -5px;
+      }
+      .items:nth-child(2){
+        // width: 187px;
+        // height: 131px;
+        width: 50%;
+        height: 50%;
+        float: left;
+        margin-bottom: -5px;
+      }
+      .items:nth-child(3){
+        // width: 187px;
+        // height: 131px;
+        // top: 131px;
+        width: 50%;
+        height: 50%;
+        top: 50%;
+        float: left;
+        margin-bottom: -5px;
       }
     }
   }
