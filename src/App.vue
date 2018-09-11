@@ -136,16 +136,47 @@
           </div>
           <div class="divider-line"></div>
           <div class="auto-fill">
-            dsfasdfsdfsdf<br/>
-            dsfasdfsdfsdf<br/>
-            dsfasdfsdfsdf<br/>
-            dsfasdfsdfsdf<br/>
-            dsfasdfsdfsdf<br/>
-            dsfasdfsdfsdf<br/>
-            dsfasdfsdfsdf<br/>
-            dsfasdfsdfsdf<br/>
+            <a href="#" class="items">
+              <img src="./assets/images/2018091020100945116.jpg" alt="">
+            </a>
           </div>
-          
+          <div class="divider-line"></div>
+          <div class="list-two flex-box">
+            <a href="#" class="item">
+              <div class="img">
+                <img src="./assets/images/2018091113452071845.jpg" alt="">
+                <div class="tag">
+                  <img src="./assets/images/2018091113544399549.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="name">小米8 SE</div>
+                <div class="brief">三星 AMOLED 全面屏 小屏旗舰</div>
+                <div class="price">
+                  ￥1699<span>起</span>
+                  <span class="price old">￥<s>1799</s></span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="item">
+              <div class="img">
+                <img src="./assets/images/2018091114283791347.jpg" alt="">
+                <div class="tag">
+                  <img src="./assets/images/2018091113544399549.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="name">小米Max 2</div>
+                <div class="brief">6.44"大屏，5300mAh大电量</div>
+                <div class="price">
+                  ￥1199<!--<span>起</span>-->
+                  <span class="price old">￥<s>1699</s></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
         </div>
       </div>
 
@@ -209,6 +240,9 @@ html, body {
   padding: 0;
   margin: 0;
   background-repeat: no-repeat;
+}
+*, :after, :before {
+    box-sizing: border-box;
 }
 
 article, aside, footer, header, nav, section {
@@ -371,6 +405,7 @@ ul {
     top: 82px;
     left: 0;
     right: 0;
+    margin-bottom: 52px;
     background: #fff;
     transition: transform .4s cubic-bezier(.55,0,.1,1);
     .banner {
@@ -431,15 +466,7 @@ ul {
       background-color: rgb(245, 245, 245);
     }
     .auto-fill {
-      // position: relative;
-    }
-    .auto-fill.column-cell{
       position: relative;
-      display: block;
-      height:100%;
-      width:100%;
-      // width: 187px;
-      // height: 265px;
       margin: 0;
       padding: 0;
       .items {
@@ -449,6 +476,14 @@ ul {
           height: auto;
         }
       }
+    }
+    .auto-fill.column-cell{
+      position: relative;
+      display: block;
+      height:100%;
+      width:100%;
+      // width: 187px;
+      // height: 265px;
       .items:nth-child(1) {
         float: left;
         // width: 187px;
@@ -474,6 +509,79 @@ ul {
         top: 50%;
         float: left;
         margin-bottom: -5px;
+      }
+    }
+    .flex-box {
+      display: flex;
+    }
+    .flex-box>* {
+      -webkit-box-flex: 1;
+      flex: 1 1 auto;
+    }
+    .list-two {
+      .item {
+        width: 3.6rem;
+        &:first-child {
+          margin-right: .14rem;
+        }
+      }
+      .img {
+        position: relative;
+        // width: 3.6rem;
+        // height: 3.6rem;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      .tag {
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+          // width: 1.2rem;
+          // height: .32rem;
+          height: 1rem;
+          display: block;
+        }
+      }
+      .info {
+        padding: .4rem .47rem;
+        text-align: left;
+        .name, .brief {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .name {
+          font-size: .88rem;
+          color: rgba(0,0,0,.87);
+        }
+        .brief {
+          margin-top: .2rem;
+          font-size: .76rem;
+          line-height: .86rem;
+          color: rgba(0,0,0,.54);
+        }
+        .price {
+          font-size: .88rem;
+          color: #ea625b;
+          height: 1.5em;
+          line-height: 1.7em;
+          position: relative;
+          display: inline-block;
+          span {
+            display: inline-block;
+            margin-left: .14rem;
+            font-size: .62rem;
+          }
+        }
+        .price .old {
+          display: inline-block;
+          margin: 0 .1rem;
+          font-size: .62rem;
+          color: rgba(0,0,0,.54);
+        }
       }
     }
   }
