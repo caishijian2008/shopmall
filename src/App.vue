@@ -41,7 +41,6 @@
             <div class="nav-item">
               <span class="">家电</span>
             </div>
-
           </div>
         </div> -->
         <div class="nav-wrapper">
@@ -67,7 +66,6 @@
           </Menu>
         </div>
       </header>
-
       <!-- content -->
       <div class="app-page" id="home">
         <div class="bodys">
@@ -481,13 +479,15 @@
             <div class="top">返回顶端</div>
           </BackTop> -->
           <BackTop :bottom="80"></BackTop>
+          <!-- <div class="fixed-fr">
+            <a href="javascript:;" id="topto"><Icon type="ios-arrow-dropup" /></a>
+          </div> -->
         </div>
       </div>
-
+      
       <!-- footer -->
       <footer class="app-footer">
-        <div class="box-flex">
-          <a href="#" class="flex on">
+          <a href="#" class="flex active">
             <i class="bottom-icon iconfont icon-shouye"></i>
             <span>首页</span>
           </a>
@@ -503,7 +503,6 @@
             <i class="bottom-icon iconfont icon-account"></i>
             <span>我的</span>
           </a>
-        </div>
       </footer>
     </div>
   </div>
@@ -572,25 +571,42 @@ ul {
   clear: both;
   content: '';
 }
-
-.app-shell {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+.fixed-fr {
+  position: fixed;
+  bottom: 80px;
+  right: 15px;
+  z-index: 10000;
+  #topto {
+    padding: 10px;
+    width: 16px;
+    height: 16px;
+    background: rgba(0, 153, 229, .7);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 25%;
+  }
 }
+
+// .app-shell {
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  // width: 100%;
+  // height: 100%;
+  // z-index: 1;
+// }
 
 /* 头部css */
 .header {
   position: fixed;
-  top: 0px;
+  top: 0;
   left: 0;
-  right: 0;
-  z-index: 99;
+  width: 100%;
+  // right: 0;
+  // z-index: 99;
   box-shadow: 0 2px 4px -1px rgba(0,0,0,.2);
   background: #f2f2f2;
   .header-wrapper>div,
@@ -673,7 +689,7 @@ ul {
       background: #f2f2f2;
       font-size: .26rem;
       white-space: nowrap;
-      z-index: 2;
+      // z-index: 2;
       overflow-x: auto;
       height: 32px;
       line-height: 32px;
@@ -699,21 +715,20 @@ ul {
 
 /* 内容css */
 .app-page {
-  position: relative;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  width: 100%;
+  bottom: 52px;
+  top: 82px;
+  overflow: auto;
   .bodys {
-    position: absolute;
-    top: 82px;
-    left: 0;
-    right: 0;
-    margin-bottom: 52px;
+    position: relative;
     background: #fff;
     transition: transform .4s cubic-bezier(.55,0,.1,1);
     .banner {
-      // padding-bottom: 50%;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      padding-bottom: 49.86%;
     }
     .gallery {
       background: #ccc;
@@ -722,7 +737,7 @@ ul {
       position: relative;
       display: block;
       overflow: hidden;
-      z-index: 1;
+      // z-index: 1;
       .swiper-slide {
         display: block;
         position: relative;
@@ -982,25 +997,19 @@ ul {
 /* 底部css */
 .app-footer {
   position: fixed;
-  z-index: 9999;
   bottom: 0;
   left: 0;
   right: 0;
   height: 52px;
+  width: 100%;
   background: #fff;
   transition: transform .2s ease-out;
   box-shadow: 0 3px 14px 2px rgba(0,0,0,.12);
-  .box-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+  display: flex;
   .flex {
     display: flex;
     flex: 1;
     color: #999;
-    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1012,7 +1021,7 @@ ul {
       margin: 0 auto .2rem;
     }
   }
-  .flex.on {
+  .flex.active {
     color: #ff6700;
   }
 }
