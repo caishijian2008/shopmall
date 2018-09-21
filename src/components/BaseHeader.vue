@@ -8,11 +8,11 @@
         <slot name="wleft"></slot>
       </div>
       <div class="header-wrapper-middle">
-        <div class="header-title">
-          <!-- <i class="header-icon iconfont icon-search"></i>
-          <span>搜索商品名称</span> -->
-          <slot name="wmiddle"></slot>
-        </div>
+        <!-- <div class="header-title">
+          <i class="header-icon iconfont icon-search"></i>
+          <span>搜索商品名称</span>
+        </div> -->
+        <slot name="wmiddle"></slot>
       </div>
       <div class="header-wrapper-right">
         <!-- <div class="header-item">
