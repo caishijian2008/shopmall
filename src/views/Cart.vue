@@ -24,7 +24,7 @@
       </div>
       <div class="noitems">
         <a href="#">
-          <span>购物车还是空空的</span>
+          <span>购物车还是空的</span>
           <em>去逛逛</em>
         </a>
       </div>
@@ -126,10 +126,10 @@ export default {
     align-items: center;
     justify-content: space-between;
     .span {
-      font-size: 1.1rem;
-      color: rgba(0,0,0,.6);
+      font-size: 1rem;
+      color: rgba(0,0,0,.87);
       text-align: left;
-      font-weight: 700;
+      font-weight: 500;
     }
     .em {
       font-size: .85rem;
