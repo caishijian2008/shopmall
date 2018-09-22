@@ -127,7 +127,7 @@ ul {
           width: .6rem;
           height: 1rem;
           line-height: 1rem;
-          font-size: 1.5rem;
+          font-size: 1.1rem;
         }
       }
     }
