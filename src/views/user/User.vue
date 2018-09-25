@@ -56,14 +56,50 @@
       </li>
       <li class="i-wallet">
         <a href="#">
-          <i class="iconfont icon-pay"></i>
+          <i class="iconfont icon-qianbao"></i>
           <cite>我的优惠</cite>
         </a>
         <i class="iconfont icon-rightarrow"></i>
       </li>
     </ul>
-
-    
+    <div class="ui-line"></div>
+    <ul class="items">
+      <li class="i-member">
+        <a href="#">
+          <i class="iconfont icon-fuwuzhongxin"></i>
+          <cite>服务中心</cite>
+        </a>
+        <i class="iconfont icon-rightarrow"></i>
+      </li>
+      <li class="i-wallet">
+        <a href="#">
+          <i class="iconfont icon-jia"></i>
+          <cite>小米之家</cite>
+        </a>
+        <i class="iconfont icon-rightarrow"></i>
+      </li>
+    </ul>
+    <div class="ui-line"></div>
+    <ul class="items">
+      <li class="i-member">
+        <a href="#">
+          <i class="iconfont icon-f"></i>
+          <cite>F码通道</cite>
+        </a>
+        <i class="iconfont icon-rightarrow"></i>
+      </li>
+    </ul>
+    <div class="ui-line"></div>
+    <ul class="items">
+      <li class="i-member">
+        <a href="#">
+          <i class="iconfont icon-set"></i>
+          <cite>设置</cite>
+        </a>
+        <i class="iconfont icon-rightarrow"></i>
+      </li>
+    </ul>
+    <div class="ui-line"></div>
     
     <!-- footer -->
     <base-footer></base-footer>
@@ -178,7 +214,61 @@ export default {
     position: relative;
     color: rgba(0,0,0,.54);
     border-bottom: 1px solid rgba(0,0,0,.15);
-    // line-height: 0;
+    height: 3.25rem;
+    line-height: 3.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > a{
+      display: flex;
+      justify-content: flex-start;
+    }
+    & > a i {
+      font-size: 26px;
+      padding-left: 13px;
+      width: 38px;
+      height: 38px;
+      display: block;
+    }
+    & > a cite {
+      display: block;
+      font-size: .875rem;
+      font-style: normal;
+      color: rgba(0,0,0,.87);
+      padding-left: 1rem;
+    }
+    & > a i.icon-huiyuanzhongxin {
+      color: #fdbf2d;
+      font-size: 22px;
+    }
+    & > a i.icon-qianbao {
+      color: #51bbe0;
+      font-size: 28px;
+    }
+    & > a i.icon-fuwuzhongxin {
+      color: #f96c5e;
+    }
+    & > a i.icon-jia {
+      color: #ff8b43;
+    }
+    & > a i.icon-f {
+      color: #ffb302;
+    }
+    & > a i.icon-set {
+      color: rgba(0,0,0,.54);
+    }
+    &:last-child {
+      border-bottom: transparent;
+    }
+    &:not(:first-child):before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -2px;
+      height: 3px;
+      background: #fff;
+      width: 3.5rem;
+    }
   }
 }
 
