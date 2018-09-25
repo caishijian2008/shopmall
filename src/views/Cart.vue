@@ -115,7 +115,7 @@ export default {
 
 <style lang="scss" scoped>
 .app-page {
-  top: 50px;
+  top: 3.125rem;
   .nologin>a {
     height: 3.38rem;
     padding: 0 1.82rem 0 1rem;
@@ -139,7 +139,7 @@ export default {
   .noitems {
     background: #ebebeb;
     // padding: .943rem;
-    &>a {
+    & > a {
       // height: 4.7rem;
       height: 3.88rem;
       font-size: .85rem;

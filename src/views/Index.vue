@@ -95,19 +95,19 @@
         </div>
         <div class="auto-fill multi-cell">
           <a href="#" class="items">
-            <img src="https://i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+            <img src="../assets/images/2018092520291785266.jpg" alt="">
           </a>
           <a href="#" class="items">
-            <img src="https://i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+            <img src="../assets/images/2018092520224679109.jpg" alt="">
           </a>
           <a href="#" class="items">
-            <img src="https://i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+            <img src="../assets/images/2018092520291785266.jpg" alt="">
           </a>
           <a href="#" class="items">
-            <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/3df8f589521ea019b3b2d6231af17926.png?thumb=1&w=144&h=152" alt="">
+            <img src="../assets/images/2018092520224679109.jpg" alt="">
           </a>
           <a href="#" class="items">
-            <img src="https://i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+            <img src="../assets/images/2018092520291785266.jpg" alt="">
           </a>
         </div>
         <div class="divider-line thick"></div>
@@ -514,7 +514,6 @@ export default {
   align-items: center;
   border: 1px solid #e5e5e5;
   text-align: left;
-  // height: 1.2rem;
   color: rgba(0,0,0,.3);
   background-color: #fff;
   border-radius: .04rem;
@@ -525,9 +524,7 @@ export default {
   }
   .header-icon {
     display: block;
-    font-size: 14px;
-    /* width: .6rem;
-    height: 1rem; */
+    font-size: .875rem;
   }
   span {
     font-size: 1rem;

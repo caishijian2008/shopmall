@@ -49,54 +49,66 @@
     <ul class="items">
       <li class="i-member">
         <a href="#">
-          <i class="iconfont icon-huiyuanzhongxin"></i>
-          <cite>会员中心</cite>
+          <div class="a-title">
+            <i class="iconfont icon-huiyuanzhongxin"></i>
+            <cite>会员中心</cite>
+          </div>
+          <i class="iconfont icon-rightarrow"></i>
         </a>
-        <i class="iconfont icon-rightarrow"></i>
       </li>
       <li class="i-wallet">
         <a href="#">
-          <i class="iconfont icon-qianbao"></i>
-          <cite>我的优惠</cite>
+          <div class="a-title">
+            <i class="iconfont icon-qianbao"></i>
+            <cite>我的优惠</cite>
+          </div>
+          <i class="iconfont icon-rightarrow"></i>
         </a>
-        <i class="iconfont icon-rightarrow"></i>
       </li>
     </ul>
     <div class="ui-line"></div>
     <ul class="items">
       <li class="i-member">
         <a href="#">
-          <i class="iconfont icon-fuwuzhongxin"></i>
-          <cite>服务中心</cite>
+          <div class="a-title">
+            <i class="iconfont icon-fuwuzhongxin"></i>
+            <cite>服务中心</cite>
+          </div>
+          <i class="iconfont icon-rightarrow"></i>
         </a>
-        <i class="iconfont icon-rightarrow"></i>
       </li>
       <li class="i-wallet">
         <a href="#">
-          <i class="iconfont icon-jia"></i>
-          <cite>小米之家</cite>
+          <div class="a-title">
+            <i class="iconfont icon-jia"></i>
+            <cite>小米之家</cite>
+          </div>
+          <i class="iconfont icon-rightarrow"></i>
         </a>
-        <i class="iconfont icon-rightarrow"></i>
       </li>
     </ul>
     <div class="ui-line"></div>
     <ul class="items">
       <li class="i-member">
         <a href="#">
-          <i class="iconfont icon-f"></i>
-          <cite>F码通道</cite>
+          <div class="a-title">
+            <i class="iconfont icon-f"></i>
+            <cite>F码通道</cite>
+          </div>
+          <i class="iconfont icon-rightarrow"></i>
         </a>
-        <i class="iconfont icon-rightarrow"></i>
       </li>
     </ul>
     <div class="ui-line"></div>
     <ul class="items">
       <li class="i-member">
         <a href="#">
-          <i class="iconfont icon-set"></i>
-          <cite>设置</cite>
+          <div class="a-title">
+            <i class="iconfont icon-set"></i>
+            <cite>设置</cite>
+          </div>
+          <i class="iconfont icon-rightarrow"></i>
         </a>
-        <i class="iconfont icon-rightarrow"></i>
       </li>
     </ul>
     <div class="ui-line"></div>
@@ -216,47 +228,54 @@ export default {
     border-bottom: 1px solid rgba(0,0,0,.15);
     height: 3.25rem;
     line-height: 3.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    & > a{
+    & > a {
       display: flex;
-      justify-content: flex-start;
-    }
-    & > a i {
-      font-size: 26px;
-      padding-left: 13px;
-      width: 38px;
-      height: 38px;
-      display: block;
-    }
-    & > a cite {
-      display: block;
-      font-size: .875rem;
-      font-style: normal;
-      color: rgba(0,0,0,.87);
-      padding-left: 1rem;
-    }
-    & > a i.icon-huiyuanzhongxin {
-      color: #fdbf2d;
-      font-size: 22px;
-    }
-    & > a i.icon-qianbao {
-      color: #51bbe0;
-      font-size: 28px;
-    }
-    & > a i.icon-fuwuzhongxin {
-      color: #f96c5e;
-    }
-    & > a i.icon-jia {
-      color: #ff8b43;
-    }
-    & > a i.icon-f {
-      color: #ffb302;
-    }
-    & > a i.icon-set {
+      justify-content: space-between;
+      align-items: center;
       color: rgba(0,0,0,.54);
+      .a-title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        & > i {
+          display: block;
+          font-size: 1.625rem;
+          padding-left: .8125rem;
+        }
+        & > cite {
+          display: block;
+          font-size: .875rem;
+          font-style: normal;
+          color: rgba(0,0,0,.87);
+          padding-left: 1rem;
+        }
+        & > i.icon-huiyuanzhongxin {
+          color: #fdbf2d;
+          font-size: 1.375rem;
+        }
+        & > i.icon-qianbao {
+          color: #51bbe0;
+          font-size: 1.75rem;
+        }
+        & > i.icon-fuwuzhongxin {
+          color: #f96c5e;
+        }
+        & > i.icon-jia {
+          color: #ff8b43;
+        }
+        & > i.icon-f {
+          color: #ffb302;
+        }
+        & > i.icon-set {
+          color: rgba(0,0,0,.54);
+        }
+
+      }
+      &:last-child {
+        margin-right: .75rem;
+      }
     }
+
     &:last-child {
       border-bottom: transparent;
     }
@@ -272,13 +291,4 @@ export default {
   }
 }
 
-
-
-
-
-
-
-.app-page {
-  top: 50px;
-}
 </style>

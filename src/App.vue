@@ -89,13 +89,13 @@ ul {
   }
   .header-wrapper {
     justify-content: space-between;
-    height: 50px;
+    height: 3.125rem;
     background: #f2f2f2;
     color: #666;
     padding: 0;
     .logo img {
       /* width: 80%; */
-      width: 25px;
+      width: 1.5625rem;
     }
     .header-wrapper-left {
       display: flex;
@@ -141,15 +141,15 @@ ul {
       white-space: nowrap;
       // z-index: 2;
       overflow-x: auto;
-      height: 32px;
-      line-height: 32px;
+      height: 2rem;
+      line-height: 2rem;
       .nav-item {
         display: inline-block;
         padding: 0 .85rem;
         span {
           display: inline-block;
           font-size: .85rem;
-          line-height: 32px;
+          line-height: 2rem;
           border-bottom: 2px solid rgba(237,91,0,0);
           color: #747474;
           border-color: #f2f2f2;
@@ -167,8 +167,8 @@ ul {
 .app-page {
   position: fixed;
   width: 100%;
-  bottom: 52px;
-  top: 82px;
+  bottom: 3.25rem;
+  top: 5.125rem;
   overflow: auto;
   .bodys {
     position: relative;
@@ -211,11 +211,11 @@ ul {
       display: flex;
       .items {
         flex: 1;
-        max-width: 100%;
-        height: auto!important;
-        width: 100%;
+        width: 4.5rem;
+        height: 4.75rem;
         img {
           display: block;
+          max-width: 100%;
           width: 100%;
           height: auto;
         }
@@ -273,7 +273,7 @@ ul {
         width: 50%;
         height: 50%;
         float: left;
-        margin-bottom: -5px;
+        margin-bottom: -.3125rem;
       }
       .items:nth-child(3){
         // width: 187px;
@@ -283,7 +283,7 @@ ul {
         height: 50%;
         top: 50%;
         float: left;
-        margin-bottom: -5px;
+        margin-bottom: -.3125rem  ;
       }
     }
     .flex-box {
@@ -436,7 +436,7 @@ ul {
     }
   }
   .top{
-      padding: 10px;
+      padding: .625rem;
       background: rgba(0, 153, 229, .7);
       color: #fff;
       text-align: center;
@@ -450,7 +450,7 @@ ul {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 52px;
+  height: 3.25rem;
   width: 100%;
   background: #fff;
   transition: transform .2s ease-out;
@@ -467,14 +467,13 @@ ul {
       display: block;
       width: 1.4rem;
       height: 1.4rem;
-      font-size: 22px;
+      font-size: 1.375rem;
       margin: 0 auto .2rem;
     }
     &.router-link-exact-active {
       color: #ff6700;
     }
   }
-
 }
 
 </style>

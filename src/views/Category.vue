@@ -255,11 +255,11 @@ export default {
   text-align: center;
 }
 .app-page {
-  top: 50px;
+  top: 3.125rem;
   .list-nav {
     position: fixed;
-    top: 50px;
-    bottom: 52px;
+    top: 3.125rem;
+    bottom: 3.25rem;
     left: 0;
     width: 4.52rem;
     border-right: 1px solid #efefef;
@@ -271,7 +271,6 @@ export default {
       left: 0;
       right: -1.2rem;
       padding: .8rem 1.2rem .8rem 0;
-      // background: #fefefe;
       overflow-y: auto;
       li {
         font-size: 1rem;
@@ -284,7 +283,6 @@ export default {
         transform-origin: center center;
         transform: scale(.76);
         &.active {
-          // color: #fb7d34;
           transform: scale(1);
         }
         a {
@@ -307,8 +305,8 @@ export default {
     position: fixed;
     left: 4.52rem;
     right: 0;
-    top: 50px;
-    bottom: 52px;
+    top: 3.125rem;
+    bottom: 3.25rem;
     padding: 2px 1.32rem;
     overflow: auto;
     .cells-fill {
