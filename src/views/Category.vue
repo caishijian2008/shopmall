@@ -3,12 +3,12 @@
     <!-- header -->
     <base-header>
       <div class="header-item" slot="wleft">
-        <i class="iconfont icon-fanhui" @click="goBack"></i>
+        <i class="iconfont icon-arrowleft" @click="goBack"></i>
       </div>
       <div class="header-title" slot="wmiddle">分类</div>
-      <div class="header-item" slot="wright">
+      <router-link class="header-item" to="/search" slot="wright" tag="div">
         <i class="header-icon iconfont icon-search"></i>
-      </div>
+      </router-link>
     </base-header>
 
     <!-- content -->
@@ -227,7 +227,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- footer -->
     <base-footer></base-footer>
   </div>
@@ -243,7 +243,7 @@ export default {
     BaseFooter
   },
   methods: {
-    goBack() {
+    goBack () {
       this.$router.go(-1)
     }
   }

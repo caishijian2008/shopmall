@@ -3,17 +3,18 @@ import Router from 'vue-router'
 // import Home from './views/Home.vue'
 import Index from './views/Index.vue'
 
+import Set from './views/user/Set.vue'
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: Home
-    // },
     {
-      path: '/',
+      path: '',
+      redirect: '/index'
+    },
+    {
+      path: '/index',
       name: 'index',
       component: Index
     },
@@ -32,8 +33,27 @@ export default new Router({
     {
       path: '/user',
       name: 'user',
-      component: () =>
-        import(/* webpackChunkName: "user" */ './views/user/User.vue')
+      component: () => import('./views/user/User.vue')
+      // children: [
+      //   {
+      //     path: 'set',
+      //     component: Set
+      //   }
+      // ]
+    },
+    {
+      path: '/set',
+      name: 'set',
+      component: Set
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: () => import('./views/Search.vue')
     }
+    // {
+    //   path: '*',
+    //   redirect: '/index'
+    // }
   ]
 })

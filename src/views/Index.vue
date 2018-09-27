@@ -2,13 +2,13 @@
   <div class="app-shell">
     <!-- header -->
     <base-header>
-      <router-link class="header-item logo" to="/" slot="wleft" tag="div">
+      <router-link class="header-item logo" to="/index" slot="wleft">
         <img src="../assets/images/logo.png">
       </router-link>
-      <div class="header-title" slot="wmiddle">
+      <router-link class="header-title" to="/search" slot="wmiddle" tag="div">
         <i class="header-icon iconfont icon-search"></i>
         <span>搜索商品名称</span>
-      </div>
+      </router-link>
       <router-link class="header-item" to="/user" slot="wright" tag="div">
         <i class="header-icon iconfont icon-account"></i>
       </router-link>
@@ -493,7 +493,7 @@
         </div> -->
       </div>
     </div>
-    
+
     <!-- footer -->
     <base-footer></base-footer>
   </div>

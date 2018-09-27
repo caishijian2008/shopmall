@@ -1,6 +1,6 @@
 <template>
   <footer class="app-footer">
-      <router-link to="/" class="flex">
+      <router-link to="/index" class="flex">
         <i class="bottom-icon iconfont icon-shouye"></i>
         <span>首页</span>
       </router-link>

@@ -3,12 +3,12 @@
     <!-- header -->
     <base-header>
       <div class="header-item" slot="wleft">
-        <i class="iconfont icon-fanhui" @click="goBack"></i>
+        <i class="iconfont icon-arrowleft" @click="goBack"></i>
       </div>
       <div class="header-title" slot="wmiddle">购物车</div>
-      <div class="header-item" slot="wright">
+      <router-link class="header-item" to="/search" slot="wright" tag="div">
         <i class="header-icon iconfont icon-search"></i>
-      </div>
+      </router-link>
     </base-header>
 
     <!-- content -->
@@ -90,7 +90,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- footer -->
     <base-footer></base-footer>
   </div>
@@ -232,7 +232,7 @@ export default {
       }
     }
   }
-}  
+}
 @keyframes opacity01 {
   0% { opacity: 0; }
   100% { opacity: 1; }

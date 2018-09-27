@@ -102,17 +102,17 @@
     <div class="ui-line"></div>
     <ul class="items">
       <li class="i-member">
-        <a href="#">
+        <!-- <router-link :to="{name: 'set'/*, params: {userid: 123}*/}"> -->
+        <router-link to="/set">
           <div class="a-title">
             <i class="iconfont icon-set"></i>
             <cite>设置</cite>
           </div>
           <i class="iconfont icon-rightarrow"></i>
-        </a>
+        </router-link>
       </li>
     </ul>
     <div class="ui-line"></div>
-    
     <!-- footer -->
     <base-footer></base-footer>
   </div>
@@ -122,7 +122,7 @@
 import BaseHeader from '../../components/BaseHeader.vue'
 import BaseFooter from '../../components/BaseFooter.vue'
 export default {
-  name: 'user',
+  // name: 'user',
   components: {
     BaseHeader,
     BaseFooter

@@ -46,7 +46,7 @@ a:hover {
 img {
   border-style: none;
 }
-ul {
+ul, ol {
   list-style: none;
 }
 
@@ -127,7 +127,7 @@ ul {
           width: .6rem;
           height: 1rem;
           line-height: 1rem;
-          font-size: 1.1rem;
+          font-size: 1.3rem;
         }
       }
     }
@@ -162,11 +162,13 @@ ul {
           color: rgb(237, 91, 0);
           border-color: rgb(237, 91, 0);
         }
-        span.active {
-        }
       }
     }
   }
+}
+
+.iconfont.icon-arrowleft {
+  font-size: 1.25rem;
 }
 
 /* 内容css */
