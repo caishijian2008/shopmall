@@ -20,10 +20,10 @@
     </header>
     <div class="a1">
       <div class="cite">我的订单</div>
-      <div class="span">
-        <a href="#">全部订单</a>
+      <router-link to="/list" class="span">
+        <span>全部订单</span>
         <i class="iconfont icon-rightarrow"></i>
-      </div>
+      </router-link>
     </div>
     <ul class="a2">
       <li class="dfk">
@@ -48,22 +48,22 @@
     <div class="ui-line"></div>
     <ul class="items">
       <li class="i-member">
-        <a href="#">
+        <router-link to="/memcenter">
           <div class="a-title">
             <i class="iconfont icon-huiyuanzhongxin"></i>
             <cite>会员中心</cite>
           </div>
           <i class="iconfont icon-rightarrow"></i>
-        </a>
+        </router-link>
       </li>
       <li class="i-wallet">
-        <a href="#">
+        <router-link to="/coupon">
           <div class="a-title">
             <i class="iconfont icon-qianbao"></i>
             <cite>我的优惠</cite>
           </div>
           <i class="iconfont icon-rightarrow"></i>
-        </a>
+        </router-link>
       </li>
     </ul>
     <div class="ui-line"></div>
@@ -164,6 +164,9 @@ export default {
     font-size: .75rem;
     text-align: left;
   }
+  .account {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 .a1 {
   background: #fff;
@@ -187,6 +190,10 @@ export default {
   .span {
     display: flex;
     align-items: center;
+    span {
+      display: block;
+      margin-right: .2rem;
+    }
   }
 }
 .a2 {
@@ -283,8 +290,8 @@ export default {
       content: "";
       position: absolute;
       left: 0;
-      top: -2px;
-      height: 3px;
+      top: -.125rem;
+      height: .19rem;
       background: #fff;
       width: 3.5rem;
     }

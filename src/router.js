@@ -50,6 +50,21 @@ export default new Router({
       path: '/search',
       name: 'search',
       component: () => import('./views/Search.vue')
+    },
+    {
+      path: '/list',
+      name: 'list',
+      component: () => import('./views/user/List.vue')
+    },
+    {
+      path: '/memcenter',
+      name: 'membercenter',
+      component: () => import('./views/user/MemberCenter.vue')
+    },
+    {
+      path: '/coupon',
+      name: 'coupon',
+      component: () => import('./views/user/Coupon.vue')
     }
     // {
     //   path: '*',

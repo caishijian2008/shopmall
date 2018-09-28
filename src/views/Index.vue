@@ -487,7 +487,7 @@
         <!-- <BackTop :height="100" :bottom="100">
           <div class="top">返回顶端</div>
         </BackTop> -->
-        <BackTop :bottom="80"></BackTop>
+        <!-- <BackTop :bottom="80"></BackTop> -->
         <!-- <div class="fixed-fr">
           <a href="javascript:;" id="topto"><Icon type="ios-arrow-dropup" /></a>
         </div> -->
