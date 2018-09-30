@@ -33,9 +33,43 @@
           <li class="item">
             <div class="ui-item">
               <div class="choose checked"></div>
-              <a href="#" class="img-product">
+              <router-link to="#" class="img-product">
                 <img src="../assets/images/2018092818412345mi4.jpg" alt="">
-              </a>
+              </router-link>
+              <div class="info">
+                <p class="name">
+                  <span class="ico ico-seckill">秒</span>
+                  <span>小米平板4 Plus 10英寸 LTE版 4GB内存 黑色 128GB</span>
+                </p>
+                <div class="price-without">
+                  <span>售价：</span>
+                  <span>2099元</span>
+                </div>
+                <div class="num">
+                  <div class="xm-input-number">
+                    <div class="input-sub">
+                      <i class="iconfont icon-jian"></i>
+                    </div>
+                    <div class="input-num">
+                      <span>1</span>
+                    </div>
+                    <div class="input-add">
+                      <i class="iconfont icon-add"></i>
+                    </div>
+                  </div>
+                  <div class="delete">
+                    <i class="iconfont icon-delete"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="ui-item">
+              <div class="choose checked"></div>
+              <router-link to="#" class="img-product">
+                <img src="../assets/images/2018092818412345mi4.jpg" alt="">
+              </router-link>
               <div class="info">
                 <p class="name">
                   <span class="ico ico-seckill">秒</span>
@@ -131,10 +165,20 @@
           </div>
         </div>
       </div>
+      <div class="bottom-submit">
+        <div class="price-box">
+          <span>共1件 金额：</span>
+          <br>
+          <strong>2099</strong>
+          <span>元</span>
+        </div>
+        <router-link to="/category" class="btn disable black">继续购物</router-link>
+        <router-link to="#" class="btn">去结算</router-link>
+      </div>
     </div>
 
     <!-- footer -->
-    <base-footer></base-footer>
+    <!-- <base-footer></base-footer> -->
   </div>
 </template>
 
@@ -214,7 +258,7 @@ export default {
     background: #fff;
     .item {
       border-bottom: 1px solid #f6f6f6;
-      // line-height: 0;
+      line-height: 0;
       .ui-item {
         padding: .75rem 0;
         display: flex;
@@ -258,11 +302,9 @@ export default {
           color: #666;
           margin-bottom: .375rem;
           margin-right: .9375rem;
-          display: -webkit-box;
-          box-align: start;
-          -webkit-box-align: start;
+          display: block;
           span {
-            display: block;
+            display: inline;
           }
         }
         .ico {
@@ -297,6 +339,10 @@ export default {
             background-color: #fafafa;
             text-align: center;
           }
+          .input-add.active,
+          .input-sub.active {
+            background: #f4f4f4;
+          }
           .input-num {
             display: inline-block;
             vertical-align: middle;
@@ -305,6 +351,16 @@ export default {
             text-align: center;
             font-size: 1rem;
           }
+          .iconfont {
+            display: inline-block;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            opacity: .3;
+            width: 1.875rem;
+            height: 1.875rem;
+            line-height: 1.875rem;
+            background-size: .9375rem .9375rem;
+          }
         }
         .delete {
           float: right;
@@ -312,6 +368,52 @@ export default {
           display: block;
         }
       }
+    }
+  }
+  .bottom-submit {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 99;
+    width: 100%;
+    height: 3.25rem;
+    box-shadow: 0 3px 14px 2px rgba(0,0,0,.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .price-box {
+      font-size: .8125rem;
+      color: #999;
+      width: 100%;
+      text-align: center;
+      padding-top: .469rem;
+      flex: 1;
+      strong {
+        font-size: 1.25rem;
+        color: #ff5722;
+        margin-right: .25rem;
+      }
+    }
+    .btn {
+      flex: 1;
+      display: block;
+      width: 100%;
+      outline: 0;
+      background: #ff6700;
+      color: #fff;
+      text-align: center;
+      height: 3.125rem;
+      line-height: 3.125rem;
+      font-size: .875rem;
+    }
+    .black {
+      color: #333;
+    }
+    .disable {
+      background: #f4f4f4;
+      border: 1px solid #f4f4f4;
     }
   }
   .recommend-box {

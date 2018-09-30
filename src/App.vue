@@ -139,39 +139,6 @@ ul, ol {
       }
     }
   }
-
-  .nav-wrapper {
-    position: relative;
-    .nav {
-      background: #f2f2f2;
-      font-size: .26rem;
-      white-space: nowrap;
-      z-index: 1;
-      overflow: hidden;
-      overflow-x: scroll;
-      height: 2.1rem;
-      line-height: 2.1rem;
-      &::-webkit-scrollbar {
-        display: none;
-      }
-      .nav-item {
-        display: inline-block;
-        padding: 0 .85rem;
-        span {
-          display: inline-block;
-          font-size: .85rem;
-          line-height: 1.9rem;
-          border-bottom: 2px solid rgba(237,91,0,0);
-          color: #747474;
-          border-color: #f2f2f2;
-        }
-        &.router-link-exact-active span {
-          color: rgb(237, 91, 0);
-          border-color: rgb(237, 91, 0);
-        }
-      }
-    }
-  }
 }
 
 .iconfont.icon-arrowleft {
