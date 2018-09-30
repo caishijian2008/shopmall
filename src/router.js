@@ -65,6 +65,11 @@ export default new Router({
       path: '/coupon',
       name: 'coupon',
       component: () => import('./views/user/Coupon.vue')
+    },
+    {
+      path: '/service',
+      name: 'service',
+      component: () => import('./views/user/Service.vue')
     }
     // {
     //   path: '*',

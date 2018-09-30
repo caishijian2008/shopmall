@@ -13,7 +13,7 @@
 
     <!-- content -->
     <div class="app-page">
-      <div class="nologin">
+      <div class="nologin" style="display: none;">
         <a href="#">
           <div class="span">登录后享受更多优惠</div>
           <div class="em">
@@ -22,14 +22,56 @@
           </div>
         </a>
       </div>
-      <div class="noitems">
+      <div class="noitems" style="display: none;">
         <a href="#">
           <span>购物车还是空的</span>
           <em>去逛逛</em>
         </a>
       </div>
+      <div class="cart-list">
+        <ul>
+          <li class="item">
+            <div class="ui-item">
+              <div class="choose checked"></div>
+              <a href="#" class="img-product">
+                <img src="../assets/images/2018092818412345mi4.jpg" alt="">
+              </a>
+              <div class="info">
+                <p class="name">
+                  <span class="ico ico-seckill">秒</span>
+                  <span>小米平板4 Plus 10英寸 LTE版 4GB内存 黑色 128GB</span>
+                </p>
+                <div class="price-without">
+                  <span>售价：</span>
+                  <span>2099元</span>
+                </div>
+                <div class="num">
+                  <div class="xm-input-number">
+                    <div class="input-sub">
+                      <i class="iconfont icon-jian"></i>
+                    </div>
+                    <div class="input-num">
+                      <span>1</span>
+                    </div>
+                    <div class="input-add">
+                      <i class="iconfont icon-add"></i>
+                    </div>
+                  </div>
+                  <div class="delete">
+                    <i class="iconfont icon-delete"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="ui-line"></div>
+      </div>
       <div class="recommend-box">
-        <div class="recommend-title">为你推荐</div>
+        <!-- <div class="recommend-title">为你推荐</div> -->
+        <div class="recommend-top-img">
+          <img src="../assets/images/recommend-top-img.jpg" alt="">
+        </div>
         <div class="recommend-list layout">
           <div class="goods-item">
             <a href="#">
@@ -116,7 +158,7 @@ export default {
 <style lang="scss" scoped>
 .app-page {
   top: 3.125rem;
-  .nologin>a {
+  .nologin > a {
     height: 3.38rem;
     padding: 0 1.82rem 0 1rem;
     position: relative;
@@ -168,6 +210,110 @@ export default {
       }
     }
   }
+  .cart-list {
+    background: #fff;
+    .item {
+      border-bottom: 1px solid #f6f6f6;
+      // line-height: 0;
+      .ui-item {
+        padding: .75rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .choose {
+        flex: none;
+        width: 1.875rem;
+        padding: 0 .625rem;
+        height: 5.625rem;
+        &.checked {
+          background: url(../assets/images/check_press.png) 50% 50% no-repeat;
+          background-size: 1.25rem;
+        }
+        &.unchecked {
+          background: url(../assets/images/check_normal.png) 50% 50% no-repeat;
+          background-size: 1.25rem;
+        }
+      }
+      .img-product {
+        flex: none;
+        display: block;
+        position: relative;
+        width: 5.625rem;
+        height: 5.625rem;
+        margin-right: .625rem;
+        border: 1px solid #eee;
+        border-radius: .125rem;
+        img {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+      .info {
+        text-align: left;
+        .name {
+          font-size: .875rem;
+          line-height: 1rem;
+          color: #666;
+          margin-bottom: .375rem;
+          margin-right: .9375rem;
+          display: -webkit-box;
+          box-align: start;
+          -webkit-box-align: start;
+          span {
+            display: block;
+          }
+        }
+        .ico {
+          background: #ffa800;
+          border-radius: .125rem;
+          color: #fff;
+          padding: .094rem .3125rem;
+          font-size: .6875rem;
+          margin-right: .3125rem;
+          &.ico-seckill {
+            background: #e53935;
+          }
+        }
+        .price-without {
+          padding: .375rem 0;
+          font-size: .75rem;
+          color: #999;
+          margin-bottom: .375rem;
+          span {
+            margin-right: .3125rem;
+          }
+        }
+        .xm-input-number {
+          display: inline-block;
+          border: 1px solid #eee;
+          .input-add, .input-sub {
+            display: inline-block;
+            width: 1.875rem;
+            height: 1.875rem;
+            position: relative;
+            vertical-align: middle;
+            background-color: #fafafa;
+            text-align: center;
+          }
+          .input-num {
+            display: inline-block;
+            vertical-align: middle;
+            min-width: 1.875rem;
+            padding: 0 .375rem;
+            text-align: center;
+            font-size: 1rem;
+          }
+        }
+        .delete {
+          float: right;
+          margin-right: .625rem;
+          display: block;
+        }
+      }
+    }
+  }
   .recommend-box {
     background: #fff;
     text-align: left;
@@ -176,6 +322,15 @@ export default {
       line-height: 2.5rem;
       padding: 0 1rem;
       font-size: .9rem;
+    }
+    .recommend-top-img {
+      width: 100%;
+      img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
     }
     .layout {
       display: flex;

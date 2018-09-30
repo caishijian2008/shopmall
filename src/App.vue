@@ -71,6 +71,13 @@ ul, ol {
   }
 }
 
+.ui-line {
+  height: .625rem;
+  background: #f5f5f5;
+  overflow: hidden;
+  clear: both;
+}
+
 /* 头部css */
 .header {
   position: fixed;

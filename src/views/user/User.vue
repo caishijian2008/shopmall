@@ -69,13 +69,13 @@
     <div class="ui-line"></div>
     <ul class="items">
       <li class="i-member">
-        <a href="#">
+        <router-link to="/service">
           <div class="a-title">
             <i class="iconfont icon-fuwuzhongxin"></i>
             <cite>服务中心</cite>
           </div>
           <i class="iconfont icon-rightarrow"></i>
-        </a>
+        </router-link>
       </li>
       <li class="i-wallet">
         <a href="#">

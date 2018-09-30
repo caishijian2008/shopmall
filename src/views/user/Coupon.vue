@@ -26,6 +26,22 @@
           <span>您没有未使用的优惠券</span>
         </ul>
         <ul>
+          <li class="">
+            <div class="coupon-wrap">
+              <div class="coupon-type">
+                抵扣
+              </div>
+              <section>
+                <div class="coupon-name"> 最生活毛巾抵扣券</div>
+                <div class="coupon-date">
+                  <span>2018.09.16  00:00</span>
+                  <em>至</em>
+                  <span>2018.09.16  23:59</span>
+                </div>
+              </section>
+            </div>
+            <div class="coupon-desc"> 可用于兑换最生活毛巾•青春系列1个</div>
+          </li>
           <li class="expired">
             <div class="coupon-wrap">
               <div class="coupon-type">
@@ -108,7 +124,7 @@ export default {
       color: #999;
       margin: 2.5rem 3.125rem 0;
     }
-    .li {
+    li {
       margin: .9375rem 0;
       list-style: none;
       .coupon-wrap {
@@ -119,13 +135,56 @@ export default {
         position: relative;
         color: #fff;
         text-align: left;
+        .coupon-type {
+          position: absolute;
+          top: 25%;
+          left: 0;
+          color: #fff;
+          width: 5.625rem;
+          text-align: center;
+          transform: translateY(25%);
+          font-size: 1.5625rem;
+          i {
+            font-size: .75rem;
+            vertical-align: super;
+          }
+        }
+        .coupon-name {
+          font-size: 1rem;
+          padding-top: 1rem;
+        }
+        .coupon-date {
+          opacity: .6;
+          font-size: .75rem;
+          padding-top: .375rem;
+        }
+      }
+      em, i {
+        font-style: normal;
+      }
+      .coupon-desc {
+        text-align: left;
+        color: #bbb;
+        font-size: .625rem;
+        line-height: 1.4;
+        padding: .5rem;
+        border: 1px solid #dfdfdf;
+        border-top: 0;
       }
     }
     .expired {
       .coupon-wrap {
-        background: url(../../assets/images/coupon-expired.png);
         color: #3c3c3c;
-        background-color: #d8d8d8;
+        // background: url(../../assets/images/coupon-expired.png);
+        background: #d8d8d8 url(../../assets/images/coupon-expired.png) no-repeat 0;
+        // background-color: #d8d8d8;
+        background-size: 5.625rem 5.625rem;
+        .coupon-type {
+          color: #3c3c3c;
+        }
+        .coupon-date {
+          opacity: .5;
+        }
       }
     }
   }
