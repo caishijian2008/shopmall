@@ -54,6 +54,11 @@ ul, ol {
   clear: both;
   content: "";
 }
+
+.app-shell {
+  position: relative;
+}
+
 .fixed-fr {
   position: fixed;
   bottom: 80px;
