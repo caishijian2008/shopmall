@@ -44,20 +44,20 @@
             </div>
             <div class="category-group">
               <div class="product">
-                <a href="#" class="item">
+                <router-link to="/detail/mi8--001" class="item">
                   <div class="img">
                     <img src="../assets/images/2018092117594522n120x120.png" alt="">
                   </div>
                   <div class="name">小米8</div>
-                </a>
+                </router-link>
               </div>
               <div class="product">
-                <a href="#" class="item">
+                <router-link to="/detail/mi8--002" class="item">
                   <div class="img">
                     <img src="../assets/images/2018092117594522n120x120.png" alt="">
                   </div>
                   <div class="name">小米8</div>
-                </a>
+                </router-link>
               </div>
               <div class="product">
                 <a href="#" class="item">

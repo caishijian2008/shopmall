@@ -70,6 +70,14 @@ export default new Router({
       path: '/service',
       name: 'service',
       component: () => import('./views/user/Service.vue')
+    },
+    {
+      path: '/detail/:pid',
+      name: 'details',
+      component: () => import('./views/Details.vue'),
+      meta: {
+        title: '商品详情'
+      }
     }
     // {
     //   path: '*',

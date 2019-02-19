@@ -65,7 +65,9 @@
     </base-header>
     <!-- content -->
     <div class="app-page">
-      <component :is="currentTabComponent"></component>
+      <keep-alive>
+        <component :is="currentTabComponent"></component>
+      </keep-alive>
       <tab-recommend></tab-recommend>
       <tab-photo></tab-photo>
       <tab-televi></tab-televi>
